@@ -48,4 +48,4 @@ This step assumes you already followed instructions from previous paragraph.
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/dreamingechoes/docker-elixir-phoenix.
 This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to
-adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+adhere to the [Contributor Covenant](http://contributor-covenant.org/) code of conduct.
