@@ -1,6 +1,6 @@
 # docker-elixir-phoenix
 
-A list of `Docker` files to dockerize `Phoenix` applications (WIP).
+A list of `Docker` files to dockerize `Phoenix` applications.
 
 ## Setup development environment
 
@@ -14,6 +14,7 @@ value on the `Dockerfile` and `docker-compose.yml` file to the name of your proj
 This basic templates have two main volumes: one for the application itself, and one
 for the database (`postgres`). So you will have to change your database config in
 order to use this new volume to something like this:
+
 
 ```
 # Configure your database for dev environment
@@ -33,7 +34,7 @@ these commands on your terminal:
 * Install dependencies with `docker-compose run web mix deps.get`
 * Create your database with `docker-compose run web mix ecto.create`
 * Migrate your database with `docker-compose run web mix ecto.migrate`
-* Install Node.js dependencies with `docker-compose run web npm install`
+* Install Node.js dependencies with `docker-compose run web bash -c "cd assets; npm install"`
 * Start the application with `docker-compose up`
 
 ## Setup testing environment
@@ -49,3 +50,9 @@ This step assumes you already followed instructions from previous paragraph.
 Bug reports and pull requests are welcome on GitHub at https://github.com/dreamingechoes/docker-elixir-phoenix.
 This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to
 adhere to the [Contributor Covenant](http://contributor-covenant.org/) code of conduct.
+
+----------------------------
+
+This project was developed by [dreamingechoes](https://github.com/dreamingechoes).
+It adheres to its [code of conduct](https://github.com/dreamingechoes/base/blob/master/files/CODE_OF_CONDUCT.md) and
+[contributing guidelines](https://github.com/dreamingechoes/base/blob/master/files/CONTRIBUTING.md), and uses an equivalent [license](https://github.com/dreamingechoes/base/blob/master/files/LICENSE).
